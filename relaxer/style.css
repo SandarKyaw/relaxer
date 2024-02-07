@@ -1,0 +1,187 @@
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    position: fixed;
+    top: 1rem;
+    text-align: center;
+    color: #fff;
+    font: 600 35px sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+p {
+    font-size: 25px;
+    position: absolute;
+}
+
+.bg_circle {
+    position: absolute;
+    background-color: #010f1c;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.gradient_circle {
+    position: absolute;
+    background: conic-gradient(
+        #0000B3 0%,
+        #0000B3 40%,
+        #fff 40%,
+        #fff 60%,
+        #013220 60%,
+        #013220 100%
+        );
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    z-index: -2;
+}
+
+.pointer_box{
+    position: absolute;
+    top: -40px;
+    height: 190px;
+    /* border: 1px solid gray; */
+    animation: rotate 7.5s linear infinite;
+    transform-origin: bottom;
+}
+
+.pointer_circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes grow {
+    from{
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes drop {
+    from {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.grow {
+    animation: grow 3s forwards;
+}
+
+.drop {
+    animation: drop 3s;
+}
+
+
+/* .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+}
+
+.bg_circle {
+    background-color: #010f1c;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
